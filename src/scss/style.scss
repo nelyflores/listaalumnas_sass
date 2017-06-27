@@ -1,11 +1,4 @@
-$cabecera_fondo: rgb(247, 182, 23);
-$color_fuente: rgb(255,255,255);
-$fondo_lista: rgb(43, 43, 43);
-$margen_lista: 5px;
-$alinear:center;
-$cabecera_alto:80px;
-$lista_alto:30px;
-$footer_alto:50px;
+@import 'variables';
 
 #cabecera{
 	background: $cabecera_fondo;
@@ -111,4 +104,10 @@ text-align:$alinear;
 .col-12 {
   /* (12/12)*100 */
   width: 100%;
+}
+
+@media only screen and (max-width:768px){
+	[class*="col-"]{
+	width:100%;
+	}
 }
