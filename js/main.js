@@ -16,14 +16,14 @@ var crearLista = function(alumna){
   var nombreAlumna = alumna.name;
   var apellidoPaterno = alumna.pLastName;
   var apellidoMaterno = alumna.mLastName;
+  var plantillanueva =plantilla.replace("--nombre--",nombreAlumna).replace("-apellidop--",apellidoPaterno).replace("--apellidom--",apellidoMaterno)
+  $("#asistencia").append(plantillanueva);
 
   var listaAlumna = $("<li />");
 
-  listaAlumna.text(nombreAlumna + " " + apellidoPaterno + " " +apellidoMaterno);
-
-  $("#asistencia").append(listaAlumna);
+  listaAlumna.html(nombreAlumna + " " + apellidoPaterno + " " +apellidoMaterno);
 
 }
-
+var plantilla= ' <li>--nombre--  -apellidop-- --apellidom-- <input type="checkbox"></li> '
 
 $(document).ready(cargarPagina);

@@ -4,18 +4,20 @@
 	background: $cabecera_fondo;
 	color:$color_fuente;
 	height:$cabecera_alto;
+	display: $alinear_letras;
 
 }
 #subtemas{
 	ul{
 		color:$color_fuente;
 		list-style: none;
-	
+
 	}
 	li{
 		background:$fondo_lista;
 		margin-top:$margen_lista;
 		height:$lista_alto;
+
     &:last-child{
       background:$cabecera_fondo;
     }
@@ -30,20 +32,20 @@ text-align:$alinear;
 }
 #footer{
 	@extend .aside;
+	
 	height:$footer_alto;
 }
 
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+
 
 }
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+
 }
 
 .row::before, .row::after {
